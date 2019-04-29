@@ -1,6 +1,22 @@
 /*webkit-sassui-colorful Start*/
 $webkit-sassui-colorful-options: (
-  color: #f00
+  color:
+    linear-gradient(
+      to right,
+      red,
+      orange,
+      yellow,
+      green,
+      yellow,
+      orange,
+      red,
+      orange,
+      yellow,
+      green,
+      yellow,
+      orange,
+      red
+    )
 ) !default;
 
 //@thanks to: https://www.zhangxinxu.com/
@@ -13,22 +29,12 @@ $webkit-sassui-colorful-options: (
   }
 }
 .webkit-sassui-colorful {
-  background-image: linear-gradient(
-    to right,
-    red,
-    orange,
-    yellow,
-    green,
-    yellow,
-    orange,
-    red,
-    orange,
-    yellow,
-    green,
-    yellow,
-    orange,
-    red
+  $color: map-get(
+    $map: $webkit-sassui-colorful-options,
+    $key: color
   );
+
+  background-image: $color;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   -webkit-background-size: 200% 100%;
