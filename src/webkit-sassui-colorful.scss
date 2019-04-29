@@ -1,0 +1,38 @@
+/*webkit-sassui-colorful Start*/
+$webkit-sassui-colorful-options: (
+  color: #f00
+) !default;
+
+//@thanks to: https://www.zhangxinxu.com/
+@-webkit-keyframes bgp {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -100% 0;
+  }
+}
+.webkit-sassui-colorful {
+  -webkit-mask-image: linear-gradient(to right, red, orange, yellow, green, cyan, blue, purple);
+  background-image: linear-gradient(
+    to right,
+    red,
+    orange,
+    yellow,
+    green,
+    yellow,
+    orange,
+    red,
+    orange,
+    yellow,
+    green,
+    yellow,
+    orange,
+    red
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-size: 200% 100%;
+  animation: bgp 5s infinite linear;
+}
+/*webkit-sassui-colorful End*/

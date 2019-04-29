@@ -1,0 +1,29 @@
+{
+  "name": "webkit-sassui-colorful",
+  "description": "Colorful for webkit sassui",
+  "main": [
+    "dist/webkit-sassui-colorful.css",
+    "dist/webkit-sassui-colorful.scss"
+  ],
+  "authors": [
+    "afei"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "webkit",
+    "cssui",
+    "colorful"
+  ],
+  "homepage": "https://github.com/afeiship/webkit-sassui-colorful",
+  "moduleType": [
+    "amd"
+  ],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests",
+    "src"
+  ]
+}
