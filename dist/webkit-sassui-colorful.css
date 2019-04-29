@@ -6,7 +6,6 @@
     background-position: -100% 0; } }
 
 .webkit-sassui-colorful {
-  -webkit-mask-image: linear-gradient(to right, red, orange, yellow, green, cyan, blue, purple);
   background-image: linear-gradient(to right, red, orange, yellow, green, yellow, orange, red, orange, yellow, green, yellow, orange, red);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
